@@ -66,7 +66,7 @@ vector<std::string>*  DirExplorer::getDictonaries()
     {
         if(((string)(childs[i])).find(".") == string::npos)
         {
-            dictonaries->push_back((childs[i]));
+            dictonaries->push_back(path+(childs[i])+"\\");
         }
     }
     return dictonaries;
@@ -81,7 +81,7 @@ vector<std::string>* DirExplorer::getFiles()
     {
         if(((string)(childs[i])).find(".") != string::npos)
         {
-            files->push_back((childs[i]));
+            files->push_back(path+(childs[i]));
         }
     }
     return files;

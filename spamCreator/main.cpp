@@ -21,6 +21,15 @@ int main(int argc, char *argv[])
     {
      cout << "Initialize success" << endl;
      d->load();
+     vector<string> *dict =d->getDictonaries();
+     if(dict != NULL)
+     {
+         for(uint i = 0; i < dict->size(); i++)
+         {
+             cout << dict->at(i) << endl;
+         }
+        delete dict;
+     }
     }
     else
     {
