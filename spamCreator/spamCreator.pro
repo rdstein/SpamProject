@@ -16,9 +16,27 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    direxplorer.cpp
+    direxplorer.cpp \
+    filesystemnode.cpp \
+    filenode.cpp \
+    directorynode.cpp
 
 HEADERS += \
-    direxplorer.h
+    direxplorer.h \
+    filesystemnode.h \
+    filenode.h \
+    directorynode.h
+
+
+
+
+
+
+
+
+
+
+
+
 
 

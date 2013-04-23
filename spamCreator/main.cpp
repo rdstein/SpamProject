@@ -1,7 +1,7 @@
 #include <QtCore/QCoreApplication>
 #include <iostream>
 #include "direxplorer.h"
-
+#include "directorynode.h"
 
 
 
@@ -39,6 +39,11 @@ int main(int argc, char *argv[])
 
     //Usuniêcie obiektu eksplorera
     delete(d);
+
+    //Sprawdzanie struktury
+    DirectoryNode *dnode = new DirectoryNode("C:\\");
+    delete dnode;
+
 
     return a.exec();
 }
